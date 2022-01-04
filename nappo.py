@@ -89,6 +89,9 @@ def main(argv: List[str]) -> int:
 
     # print(args)
 
+    if not hasattr(args, 'func'):
+        print("Sorry function is required, to get current function invoke with --help")
+        exit(1)
     args.func(args)
 
     return 0
