@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3.6
 
 # Copyright © 2021 Red Hat, Inc
 #
@@ -67,7 +67,7 @@ def main(argv: List[str]) -> int:
 
     parent_parser.add_argument('--verbose', action='store_true', help='verbose output')
 
-    subparsers = parser.add_subparsers(title='commands', required=True)
+    subparsers = parser.add_subparsers(title='commands')  # requires is not provided in older versions
 
     list_repos_parser = subparsers.add_parser('list-repositories', parents=[parent_parser])
     list_repos_parser.set_defaults(func=list_repositories_command)
