@@ -1,5 +1,5 @@
 # nappo: a chocolate covered nougat
-This script is based (like of it 99%) on the work of the @omajid [Original
+This script is based (like 99% of it) on the work of the @omajid [Original
 Gist](https://gist.github.com/omajid/c04b6025de49d0b7b18ab4a7e789484e). It is
 used to help bootstrap Dotnet on aarch64 and s390x architecture by creating
 tarballs with necessary nuggets.
